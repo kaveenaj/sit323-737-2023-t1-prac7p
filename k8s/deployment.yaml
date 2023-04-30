@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: task5
-          image: 610b165d5fd3aa4c621e5d7490a2492818f8e9fad8ca1010d4b4495751279602/mehrabriyan/task5:latest
+          image: task5
           ports:
             - containerPort: 5000
           env:
