@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: task5
-          image: kaveenaj/sit323-737-2023-t1-prac7p
+          image: kaveenaj/sit323-737-2023-t1-prac7p:latest
+
           ports:
             - containerPort: 5000
           env:
