@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: task5
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: task5
+  template:
+    metadata:
+      labels:
+        app: task5
+    spec:
+      containers:
+        - name: task5
+          image: 610b165d5fd3aa4c621e5d7490a2492818f8e9fad8ca1010d4b4495751279602/mehrabriyan/task5:latest
+          ports:
+            - containerPort: 5000
+          env:
+            - name: NODE_ENV
+              value: production
+            - name: PORT
+              value: "5000"
